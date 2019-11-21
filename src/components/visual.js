@@ -24,6 +24,18 @@ class Visual extends Component {
             }
         };
         let viz = new window.tableau.Viz(vizContainer, url, options)  
+
+        var url2 = "https://public.tableau.com/views/PopulationByYear/Sheet2?:display_count=y&publish=yes&:origin=viz_share_link";
+        const vizContainer2 = this.vizContainer2;  
+            var options2 = {
+            hideTabs: true,
+            width: "800px",
+            height: "700px",
+            onFirstInteractive: function() {
+     // The viz is now ready and can be safely used.
+            }
+        };
+        let viz2 = new window.tableau.Viz(vizContainer2, url2, options2)  
     
       }  
 
@@ -34,7 +46,10 @@ class Visual extends Component {
     //     var viz = new tableau.Viz(placeholderDiv, url, options);   
         
         return(
+          <div>
             <div ref={(div) => { this.vizContainer = div }}> </div>  
+            <div ref={(div) => { this.vizContainer2 = div }}> </div> 
+          </div>
         );
     }
 }
