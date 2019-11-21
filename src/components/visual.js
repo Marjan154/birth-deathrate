@@ -13,7 +13,7 @@ class Visual extends Component {
       }  
 
       initViz() {  
-        var url = "https://public.tableau.com/views/Book1_15716702841400/Birth?:embed=y&:display_count=yes&publish=yes&:origin=viz_share_link";
+        var url = "https://public.tableau.com/views/BirthRateByYear/BirthRatebyYear?:display_count=y&publish=yes&:origin=viz_share_link";
         const vizContainer = this.vizContainer;  
             var options = {
             hideTabs: true,
