@@ -36,6 +36,32 @@ class Visual extends Component {
             }
         };
         let viz2 = new window.tableau.Viz(vizContainer2, url2, options2)  
+
+        var url3 = "https://public.tableau.com/views/BirthDeath/BirthRateofeachCountry?:display_count=y&publish=yes&:origin=viz_share_link";
+        const vizContainer3 = this.vizContainer3;  
+            var options3 = {
+            hideTabs: true,
+            width: "800px",
+            height: "700px",
+            onFirstInteractive: function() {
+     // The viz is now ready and can be safely used.
+            }
+        };
+        let viz3 = new window.tableau.Viz(vizContainer3, url3, options3) 
+
+        var url4 = "https://public.tableau.com/views/BirthDeath/Sheet4?:display_count=y&publish=yes&:origin=viz_share_link";
+        const vizContainer4 = this.vizContainer4;  
+            var options4 = {
+            hideTabs: true,
+            width: "800px",
+            height: "700px",
+            onFirstInteractive: function() {
+     // The viz is now ready and can be safely used.
+            }
+        };
+        let viz4 = new window.tableau.Viz(vizContainer4, url4, options4) 
+        
+        
     
       }  
 
@@ -49,6 +75,7 @@ class Visual extends Component {
           <div>
             <div ref={(div) => { this.vizContainer = div }}> </div>  
             <div ref={(div) => { this.vizContainer2 = div }}> </div> 
+            <div ref={(div) => { this.vizContainer3 = div }}> </div> 
           </div>
         );
     }
