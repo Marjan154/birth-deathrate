@@ -13,29 +13,41 @@ class Visual extends Component {
       }  
 
       initViz() {  
-        var url = "https://public.tableau.com/views/BirthDeath/Sheet8?:display_count=y&publish=yes&:origin=viz_share_link";
-        const vizContainer = this.vizContainer;  
-            var options = {
+        var populationByIncomeUrl = "https://public.tableau.com/views/BirthDeath/Sheet8?:display_count=y&publish=yes&:origin=viz_share_link";
+        const populationByIncomevizContainer = this.populationByIncomevizContainer;  
+            var populationByIncomeoptions = {
             hideTabs: true,
-            width: "800px",
+            width: "1000px",
             height: "700px",
             onFirstInteractive: function() {
      // The viz is now ready and can be safely used.
             }
         };
-        let viz = new window.tableau.Viz(vizContainer, url, options)  
+        let viz = new window.tableau.Viz(populationByIncomevizContainer, populationByIncomeUrl, populationByIncomeoptions)  
 
         var populationByYearUrl = "https://public.tableau.com/shared/YG9BWBTQW?:display_count=y&:origin=viz_share_link";
         const populationByYearvizContainer = this.populationByYearvizContainer;  
             var populationByYearOptions = {
             hideTabs: true,
-            width: "800px",
+            width: "1000px",
             height: "700px",
             onFirstInteractive: function() {
      // The viz is now ready and can be safely used.
             }
         };
-        let populationByYearViz = new window.tableau.Viz(populationByYearvizContainer, populationByYearUrl, populationByYearOptions)  
+        let populationByYearViz = new window.tableau.Viz(populationByYearvizContainer, populationByYearUrl, populationByYearOptions)
+        
+        var populationByRegionUrl = "https://public.tableau.com/views/BirthDeath/Sheet9?:display_count=y&publish=yes&:origin=viz_share_link";
+        const populationByRegionvizContainer = this.populationByRegionvizContainer;  
+            var populationByRegionOptions = {
+            hideTabs: true,
+            width: "1000px",
+            height: "700px",
+            onFirstInteractive: function() {
+     // The viz is now ready and can be safely used.
+            }
+        };
+        let populationByRegionViz = new window.tableau.Viz(populationByRegionvizContainer, populationByRegionUrl, populationByRegionOptions)
 
     //     var url3 = "https://public.tableau.com/views/BirthDeath/BirthRateofeachCountry?:display_count=y&publish=yes&:origin=viz_share_link";
     //     const vizContainer3 = this.vizContainer3;  
@@ -65,11 +77,13 @@ class Visual extends Component {
         const vizContainer5 = this.vizContainer5;  
             var options5 = {
             hideTabs: true,
-            width: "800px",
+            width: "1000px",
             height: "700px",
+            hideToolbar: true,
             onFirstInteractive: function() {
      // The viz is now ready and can be safely used.
             }
+            
         };
         let viz5 = new window.tableau.Viz(vizContainer5, url5, options5) 
         
@@ -84,13 +98,15 @@ class Visual extends Component {
         
         return(
           <div>
-            { <div ref={(div) => { this.vizContainer = div }}> </div>  
+            { <div ref={(div) => { this.populationByIncomeUrl = div }}> </div>  
             /*<div ref={(div) => { this.vizContainer2 = div }}> </div> 
             <div ref={(div) => { this.vizContainer3 = div }}> </div> 
             <div ref={(div) => { this.vizContainer4 = div }}> </div>  */}
-            <div ref={(div) => { this.populationByYearViz = div }}> </div> 
+            <div ref={(div) => { this.populationByYearvizContainer = div }}> </div> 
+            <div ref={(div) => { this.populationByRegionvizContainer = div }}> </div> 
             <div ref={(div) => { this.vizContainer5 = div }}> </div> 
           </div>
+          
         );
     }
 }
