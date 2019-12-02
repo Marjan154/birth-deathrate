@@ -8,28 +8,14 @@ function App() {
     <div className="App">
       <h1 id="title">Birth and Death Rates</h1>
       <p className="content">
-        Birth and Death rates is crucial to asseccing humanitys' progress and
-        advancement. If you look at our visualizations, you might find
-        interesting trends or unexpected information. Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
+        Birth and Death rates are crucial to asseccing humanitys' progress and
+        advancement. According to The United Nations Food and Agriculture
+        Organization (FAO) estimates the world population will surpass 9.1
+        billion by 2050, at which point agricultural systems will not be able to
+        supply enough food to feed everyone. However, new research suggests the
+        world could run out of food even sooner. If you look at our
+        visualizations, you might find interesting trends or unexpected
+        information.
       </p>
       <Visual></Visual>
     </div>
