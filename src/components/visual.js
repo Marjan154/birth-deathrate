@@ -78,12 +78,15 @@ class Visual extends Component {
 
     return (
       <div className="viz-graphs">
+        <h1 style={{ width: "100vw" }}>HEADER</h1>
         <div className="viz-description">
           <div
             id="secondViz"
             style={{ float: "left", paddingRight: "20px" }}
           ></div>
           <div style={{ float: "right", width: "450px" }}>
+            <h2>Title 1</h2>
+            <br></br>
             lorem ipsum. lorem. Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -118,8 +121,11 @@ class Visual extends Component {
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt
           mollit anim id est laborum.
         </div>
+        <h1 style={{ width: "100vw" }}>HEADER</h1>
         <div className="viz-description">
           <div style={{ float: "right", width: "450px", paddingRight: "50px" }}>
+            <h2>Title 2</h2>
+            <br></br>
             lorem ipsum. lorem. Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -157,6 +163,7 @@ class Visual extends Component {
           mollit anim id est laborum.
         </div>
 
+        <h1 style={{ width: "100vw" }}>HEADER</h1>
         <div className="viz-description">
           <div id="firstViz" style={{ paddingRight: "50px" }}></div>
           <div id="fourthViz"></div>
