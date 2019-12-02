@@ -165,7 +165,7 @@ class Visual extends Component {
 
         <h1 style={{ width: "100vw" }}>HEADER</h1>
         <div className="viz-description">
-          <div id="firstViz" style={{ paddingRight: "50px" }}></div>
+          <div id="firstViz" style={{ paddingRight: "30px" }}></div>
           <div id="fourthViz"></div>
         </div>
 
