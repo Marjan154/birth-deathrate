@@ -15,7 +15,8 @@ class Visual extends Component {
   initViz() {
     const url =
       "https://public.tableau.com/views/BirthDeath/Sheet8?:display_count=y&publish=yes&:origin=viz_share_link";
-    const vizContainer = this.vizContainer;
+    const populationByIncomeGroup = document.getElementById("firstViz");
+    //this.vizContainer;
     const options = {
       hideTabs: true,
       width: "800px",
@@ -24,11 +25,11 @@ class Visual extends Component {
         // The viz is now ready and can be safely used.
       }
     };
-    let viz = new window.tableau.Viz(vizContainer, url, options);
+    let viz = new window.tableau.Viz(populationByIncomeGroup, url, options);
 
     const populationByYearUrl =
       "https://public.tableau.com/shared/YG9BWBTQW?:display_count=y&:origin=viz_share_link";
-    const populationByYearvizContainer = this.populationByYearvizContainer;
+    const populationByYearvizContainer = document.getElementById("secondViz");
     const populationByYearOptions = {
       hideTabs: true,
       width: "800px",
@@ -45,10 +46,10 @@ class Visual extends Component {
 
     const url5 =
       "https://public.tableau.com/shared/Q85R52WDD?:display_count=y&:origin=viz_share_link";
-    const vizContainer5 = this.vizContainer5;
+    const vizContainer5 = document.getElementById("thirdViz");;
     const options5 = {
       hideTabs: true,
-      width: "800px",
+      width: "1000px",
       height: "700px",
       onFirstInteractive: function() {
         // The viz is now ready and can be safely used.
@@ -65,15 +66,19 @@ class Visual extends Component {
     return (
       <div className="viz-graphs">
         {
-          <div
-            ref={div => {
-              this.vizContainer = div;
-            }}
-          >
-            {" "}
-          </div>
+          
+          // <div
+          //   ref={div => {
+          //     this.vizContainer = div;
+          //   }}
+          // >
+          //   {" "}
+          // </div>
         }
-        <div
+        <div id="firstViz"></div>
+        <div id="secondViz"></div>
+        <div id="thirdViz"></div>
+        {/* <div
           ref={div => {
             this.populationByYearViz = div;
           }}
@@ -86,7 +91,7 @@ class Visual extends Component {
           }}
         >
           {" "}
-        </div>
+        </div> */}
       </div>
     );
   }
