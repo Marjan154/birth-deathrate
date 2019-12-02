@@ -1,0 +1,12 @@
+.viz-graphs {
+  padding-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 50px;
+}
+
+.viz-graphs div {
+  padding-bottom: 100px;
+}
