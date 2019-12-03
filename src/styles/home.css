@@ -16,6 +16,8 @@
   justify-content: center;
   display: flex;
   flex-flow: row wrap;
+  /*background-color: #eeeeee;*/
+
 }
 
 .content {
@@ -25,4 +27,5 @@
   text-indent: 5%;
   margin: 0 auto;
   width: 85%;
+
 }
