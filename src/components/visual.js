@@ -108,7 +108,7 @@ class Visual extends Component {
     var AverageBirthRateOfCountriesOptions = {
       hideTabs: true,
       width: "47vw",
-      height: "500px",
+      height: "700px",
       onFirstInteractive: function() {
         // The viz is now ready and can be safely used.
       }
@@ -216,6 +216,14 @@ class Visual extends Component {
             <div id="AveragePopulationOfCountriesByIncome"></div>
             <div id="AverageBirthRateOfCountries"></div>
             <div id="AverageDeathRateOfCountries"></div>
+            <p className="content">
+              The World Bank classifies low-income countries as countries with
+              GNI per capita of less than $1,025. Lower middle-income countires
+              has a GNI per capita between $1,026 and $3,995. Upper
+              middle-income countries are between $3,996 and $12,375. And
+              High-income countries are those with a GNI per capita of $12,376
+              or more.
+            </p>
           </div>
 
           <div className="content">
