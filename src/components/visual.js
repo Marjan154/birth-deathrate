@@ -100,7 +100,7 @@ class Visual extends Component {
         <div className="viz-description">
           <div id="butterFlyViz"></div>
           <div style={{ float: "right", width: "300px" }}>
-            <p>
+            <p className="content">
               As this data shows, birth and death rate has been consistently
               decreasing.
             </p>
@@ -115,7 +115,7 @@ class Visual extends Component {
           <div style={{ float: "right", width: "450px" }}>
             <h2>Country Population</h2>
             <br></br>
-            <p>
+            <p className="content">
               As you can see from this graph, population has steadlily been
               increasing for the majority of the world. The population continues
               to grow despite the decreasing birth rate, beacuse of the
