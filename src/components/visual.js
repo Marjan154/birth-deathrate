@@ -19,13 +19,17 @@ class Visual extends Component {
     //this.vizContainer;
     const butterFlyChartOptions = {
       hideTabs: true,
-      width: "1000px",
+      width: "950px",
       height: "700px",
       onFirstInteractive: function() {
         // The viz is now ready and can be safely used.
       }
     };
-    let butterFly = new window.tableau.Viz(butterFlyChart, ButterFlyofbirthdeathURL, butterFlyChartOptions);
+    let butterFly = new window.tableau.Viz(
+      butterFlyChart,
+      ButterFlyofbirthdeathURL,
+      butterFlyChartOptions
+    );
 
     const url =
       "https://public.tableau.com/views/BirthDeath/Sheet8?:display_count=y&publish=yes&:origin=viz_share_link";
@@ -93,9 +97,17 @@ class Visual extends Component {
     return (
       <div className="viz-graphs">
         <h1 style={{ width: "100vw" }}>POPULATION</h1>
-
         <div className="viz-description">
           <div id="butterFlyViz"></div>
+          <div style={{ float: "right", width: "300px" }}>
+            <p>
+              As this data shows, birth and death rate has been consistently
+              decreasing.
+            </p>
+          </div>
+        </div>
+
+        <div className="viz-description">
           <div
             id="secondViz"
             style={{ float: "left", paddingRight: "20px" }}
@@ -104,18 +116,10 @@ class Visual extends Component {
             <h2>Country Population</h2>
             <br></br>
             <p>
-              As you can see form this graph, population has steadlily been
-              increasing fir the majority of the world. In this visualization
-              that users encounter is a graph that displays the population of
-              each country through the years. Users can select the country they
-              want to view and the years. The graph also shows the average
-              population of the country between all the years selected. If the
-              user selects two or more countries, it will take the average
-              population of all the countries selected combined, so if users
-              only want to view the average of a single country they must select
-              only a single country. Fun Fact: If users select Japan, they would
-              see that in the last few years Japan’s population actually
-              decreased.
+              As you can see from this graph, population has steadlily been
+              increasing for the majority of the world. The population continues
+              to grow despite the decreasing birth rate, beacuse of the
+              decreasing death rate.
             </p>
           </div>
         </div>
