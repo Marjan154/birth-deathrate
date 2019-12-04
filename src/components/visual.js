@@ -13,13 +13,27 @@ class Visual extends Component {
   }
 
   initViz() {
+    const ButterFlyofbirthdeathURL =
+      "https://public.tableau.com/views/ButterFlyofbirthdeath/ButterFlychartofBirthAndDeathRate?:display_count=y&publish=yes&:origin=viz_share_link";
+    const butterFlyChart = document.getElementById("butterFlyViz");
+    //this.vizContainer;
+    const butterFlyChartOptions = {
+      hideTabs: true,
+      width: "1000px",
+      height: "700px",
+      onFirstInteractive: function() {
+        // The viz is now ready and can be safely used.
+      }
+    };
+    let butterFly = new window.tableau.Viz(butterFlyChart, ButterFlyofbirthdeathURL, butterFlyChartOptions);
+
     const url =
       "https://public.tableau.com/views/BirthDeath/Sheet8?:display_count=y&publish=yes&:origin=viz_share_link";
     const populationByIncomeGroup = document.getElementById("firstViz");
     //this.vizContainer;
     const options = {
       hideTabs: true,
-      width: "47vw",
+      width: "1000px",
       height: "700px",
       onFirstInteractive: function() {
         // The viz is now ready and can be safely used.
@@ -81,6 +95,7 @@ class Visual extends Component {
         <h1 style={{ width: "100vw" }}>POPULATION</h1>
 
         <div className="viz-description">
+          <div id="butterFlyViz"></div>
           <div
             id="secondViz"
             style={{ float: "left", paddingRight: "20px" }}
