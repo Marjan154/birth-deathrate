@@ -17,7 +17,6 @@
   display: flex;
   flex-flow: row wrap;
   /*background-color: #eeeeee;*/
-
 }
 
 .content {
@@ -27,5 +26,10 @@
   text-indent: 5%;
   margin: 0 auto;
   width: 85%;
+}
 
+#Population,
+#Income,
+#BirthDeath {
+  padding-top: 100px;
 }
