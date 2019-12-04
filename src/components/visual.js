@@ -74,9 +74,9 @@ class Visual extends Component {
       populationByYearUrl,
       populationByYearOptions
     );
-
+    
     const url5 =
-      "https://public.tableau.com/shared/Q85R52WDD?:display_count=y&:origin=viz_share_link";
+      "https://public.tableau.com/shared/BPM3H42WN?:display_count=y&:origin=viz_share_link";
     const vizContainer5 = document.getElementById("thirdViz");
     const options5 = {
       hideTabs: true,
