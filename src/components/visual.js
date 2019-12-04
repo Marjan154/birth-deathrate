@@ -78,7 +78,6 @@ class Visual extends Component {
 
     return (
       <div className="viz-graphs">
-
         <h1 style={{ width: "100vw" }}>POPULATION</h1>
 
         <div className="viz-description">
@@ -89,29 +88,50 @@ class Visual extends Component {
           <div style={{ float: "right", width: "450px" }}>
             <h2>Country Population</h2>
             <br></br>
-            <p>In this visualization that users encounter is a graph that displays the population of each country through the years. Users can select the country they want to view and the years. The graph also shows the average population of the country between all the years selected. If the user selects two or more countries, it will take the average population of all the countries selected combined, so if users only want to view the average of a single country they must select only a single country. Fun Fact: If users select Japan, they would see that in the last few years Japan’s population actually decreased.
+            <p>
+              As you can see form this graph, population has steadlily been
+              increasing fir the majority of the world. In this visualization
+              that users encounter is a graph that displays the population of
+              each country through the years. Users can select the country they
+              want to view and the years. The graph also shows the average
+              population of the country between all the years selected. If the
+              user selects two or more countries, it will take the average
+              population of all the countries selected combined, so if users
+              only want to view the average of a single country they must select
+              only a single country. Fun Fact: If users select Japan, they would
+              see that in the last few years Japan’s population actually
+              decreased.
             </p>
           </div>
         </div>
 
         <h1 style={{ width: "100vw" }}>DIFFERENCE IN BIRTH & DEATH RATES</h1>
         <div className="content">
-          <div
-          style={{ float: "right", paddingRight: "20px" }}
-          >
-
-
-          </div>
+          <div style={{ float: "right", paddingRight: "20px" }}></div>
 
           <div id="thirdViz"></div>
         </div>
 
         <div className="content">
           <h2>Country & Year</h2>
-        <p>
-        This visualization shows us the difference between birth and death rate (per 1000 people) of each country in each year. On the side users can select between different countries, they can view one, multiple or all countries at the same time. The “Measure Names” indicate which year we are talking about. So if a user would like to view “Dif 1960”, it is displaying the difference between birth rate and death rate of that country. The “Measure Values” shows the range of the data. In the above example, the lowest value is -4.57 meaning the difference the death rate is higher than birth rate while the highest is 37.32, which means the birth rate is higher than death rate. The color spectrum is used so the user can visually see it the information quickly. If the color is blue, it means the birth rate is higher than the death rate for that country in that year. If the color is read it means there is a higher death rate than birth rate. And the more red the country means it has an even higher death rate compared to birth rate, while the more blue a country is then the higher birth is compared to death rate.
-
-
+          <p>
+            This visualization shows us the difference between birth and death
+            rate (per 1000 people) of each country in each year. On the side
+            users can select between different countries, they can view one,
+            multiple or all countries at the same time. The “Measure Names”
+            indicate which year we are talking about. So if a user would like to
+            view “Dif 1960”, it is displaying the difference between birth rate
+            and death rate of that country. The “Measure Values” shows the range
+            of the data. In the above example, the lowest value is -4.57 meaning
+            the difference the death rate is higher than birth rate while the
+            highest is 37.32, which means the birth rate is higher than death
+            rate. The color spectrum is used so the user can visually see it the
+            information quickly. If the color is blue, it means the birth rate
+            is higher than the death rate for that country in that year. If the
+            color is read it means there is a higher death rate than birth rate.
+            And the more red the country means it has an even higher death rate
+            compared to birth rate, while the more blue a country is then the
+            higher birth is compared to death rate.
           </p>
         </div>
 
@@ -122,9 +142,16 @@ class Visual extends Component {
         </div>
 
         <div className="content">
-        <p>
-        As you can see there is a big spike in population in low-middle income countries. This could be due to the fact that these types of countries requires …. (add citations)
-        Other interesting facts you can see is that high income countries have a slower increase in population this could be because the birth rates are lower due to better access to birth control, people viewing kids as a financial drain. As well as having access to education and careers causing woman to not have children or later on. Despite this however there is still an increase.
+          <p>
+            As you can see there is a big spike in population in low-middle
+            income countries. This could be due to the fact that these types of
+            countries requires …. (add citations) Other interesting facts you
+            can see is that high income countries have a slower increase in
+            population this could be because the birth rates are lower due to
+            better access to birth control, people viewing kids as a financial
+            drain. As well as having access to education and careers causing
+            woman to not have children or later on. Despite this however there
+            is still an increase.
           </p>
         </div>
       </div>
