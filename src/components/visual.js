@@ -31,19 +31,32 @@ class Visual extends Component {
       butterFlyChartOptions
     );
 
-    const url =
-      "https://public.tableau.com/views/BirthDeath/Sheet8?:display_count=y&publish=yes&:origin=viz_share_link";
-    const populationByIncomeGroup = document.getElementById("firstViz");
-    //this.vizContainer;
-    const options = {
+    const AveragePopulationOfCountriesByIncomeUrl =
+      "https://public.tableau.com/views/AVGPopulation/Sheet8?:display_count=y&publish=yes&:origin=viz_share_link";
+    const AveragePopulationOfCountriesByIncome = document.getElementById("AveragePopulationOfCountriesByIncome");
+    const AveragePopulationOfCountriesByIncomeOptions = {
       hideTabs: true,
-      width: "47vw",
-      height: "700px",
+      width: "1000px",
+      height: "600px",
       onFirstInteractive: function() {
         // The viz is now ready and can be safely used.
       }
     };
-    let viz = new window.tableau.Viz(populationByIncomeGroup, url, options);
+    let viz2 = new window.tableau.Viz(AveragePopulationOfCountriesByIncome, AveragePopulationOfCountriesByIncomeUrl, AveragePopulationOfCountriesByIncomeOptions);
+
+    // const url =
+    //   "https://public.tableau.com/views/BirthDeath/Sheet8?:display_count=y&publish=yes&:origin=viz_share_link";
+    // const populationByIncomeGroup = document.getElementById("firstViz");
+    // //this.vizContainer;
+    // const options = {
+    //   hideTabs: true,
+    //   width: "47vw",
+    //   height: "700px",
+    //   onFirstInteractive: function() {
+    //     // The viz is now ready and can be safely used.
+    //   }
+    // };
+    // let viz = new window.tableau.Viz(populationByIncomeGroup, url, options);
 
     const populationByYearUrl =
       "https://public.tableau.com/shared/YG9BWBTQW?:display_count=y&:origin=viz_share_link";
@@ -153,6 +166,7 @@ class Visual extends Component {
         <h1 style={{ width: "100vw" }}>INCOME RELATIONSHIP</h1>
         <div className="viz-description">
           <div id="firstViz" style={{ paddingRight: "30px" }}></div>
+          <div id="AveragePopulationOfCountriesByIncome"></div>
           <div id="AverageBirthRateOfCountries"></div>
           <div id="AverageDeathRateOfCountries"></div>
         </div>
