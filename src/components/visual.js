@@ -75,10 +75,10 @@ class Visual extends Component {
     };
     let viz5 = new window.tableau.Viz(vizContainer5, url5, options5);
 
-    const url6 =
-      "https://public.tableau.com/shared/49YBR7FFM?:display_count=y&:origin=viz_share_link";
-    const vizContainer6 = document.getElementById("fourthViz");
-    var options6 = {
+    const AverageBirthRateOfCountriesUrl =
+      "https://public.tableau.com/views/avg_15754315796390/AvgBirthRate?:display_count=y&:origin=viz_share_link";
+    const AverageBirthRateOfCountries = document.getElementById("AverageBirthRateOfCountries");
+    var AverageBirthRateOfCountriesOptions = {
       hideTabs: true,
       width: "47vw",
       height: "700px",
@@ -86,7 +86,7 @@ class Visual extends Component {
         // The viz is now ready and can be safely used.
       }
     };
-    let viz6 = new window.tableau.Viz(vizContainer6, url6, options6);
+    let viz6 = new window.tableau.Viz(AverageBirthRateOfCountries, AverageBirthRateOfCountriesUrl, AverageBirthRateOfCountriesOptions);
   }
 
   render() {
@@ -140,7 +140,7 @@ class Visual extends Component {
         <h1 style={{ width: "100vw" }}>INCOME RELATIONSHIP</h1>
         <div className="viz-description">
           <div id="firstViz" style={{ paddingRight: "30px" }}></div>
-          <div id="fourthViz"></div>
+          <div id="AverageBirthRateOfCountries"></div>
         </div>
 
         <div className="content">
