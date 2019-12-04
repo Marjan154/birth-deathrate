@@ -87,6 +87,19 @@ class Visual extends Component {
       }
     };
     let viz6 = new window.tableau.Viz(AverageBirthRateOfCountries, AverageBirthRateOfCountriesUrl, AverageBirthRateOfCountriesOptions);
+
+    const AverageDeathRateOfCountriesUrl =
+      "https://public.tableau.com/views/avgDeath/Sheet1?:display_count=y&:origin=viz_share_link";
+    const AverageDeathRateOfCountries = document.getElementById("AverageDeathRateOfCountries");
+    var AverageDeathRateOfCountriesOptions = {
+      hideTabs: true,
+      width: "47vw",
+      height: "700px",
+      onFirstInteractive: function() {
+        // The viz is now ready and can be safely used.
+      }
+    };
+    let viz7 = new window.tableau.Viz(AverageDeathRateOfCountries, AverageDeathRateOfCountriesUrl, AverageDeathRateOfCountriesOptions);
   }
 
   render() {
@@ -141,6 +154,7 @@ class Visual extends Component {
         <div className="viz-description">
           <div id="firstViz" style={{ paddingRight: "30px" }}></div>
           <div id="AverageBirthRateOfCountries"></div>
+          <div id="AverageDeathRateOfCountries"></div>
         </div>
 
         <div className="content">
