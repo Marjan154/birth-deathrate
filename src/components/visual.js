@@ -60,7 +60,7 @@ class Visual extends Component {
 
     const populationByYearUrl =
       "https://public.tableau.com/shared/YG9BWBTQW?:display_count=y&:origin=viz_share_link";
-    const populationByYearvizContainer = document.getElementById("secondViz");
+    const populationByYearvizContainer = document.getElementById("populationByYear");
     const populationByYearOptions = {
       hideTabs: true,
       width: "800px",
@@ -75,10 +75,10 @@ class Visual extends Component {
       populationByYearOptions
     );
     
-    const url5 =
+    const DiffInBirthAndDeathUrl =
       "https://public.tableau.com/shared/BPM3H42WN?:display_count=y&:origin=viz_share_link";
-    const vizContainer5 = document.getElementById("thirdViz");
-    const options5 = {
+    const DiffInBirthAndDeath = document.getElementById("DiffInBirthAndDeath");
+    const DiffInBirthAndDeathOptions = {
       hideTabs: true,
       width: "1000px",
       height: "600px",
@@ -86,7 +86,7 @@ class Visual extends Component {
         // The viz is now ready and can be safely used.
       }
     };
-    let viz5 = new window.tableau.Viz(vizContainer5, url5, options5);
+    let viz5 = new window.tableau.Viz(DiffInBirthAndDeath, DiffInBirthAndDeathUrl, DiffInBirthAndDeathOptions);
 
     const AverageBirthRateOfCountriesUrl =
       "https://public.tableau.com/views/avg_15754315796390/AvgBirthRate?:display_count=y&:origin=viz_share_link";
@@ -134,7 +134,7 @@ class Visual extends Component {
         </div>
 
         <div className="viz-description">
-          <div id="thirdViz"></div>
+          <div id="DiffInBirthAndDeath"></div>
           <div style={{ float: "right", width: "300px" }}>
             <p className="content">
               <h2>Country & Year</h2>
@@ -148,7 +148,7 @@ class Visual extends Component {
 
         <div className="viz-description">
           <div
-            id="secondViz"
+            id="populationByYear"
             style={{ float: "left", paddingRight: "20px" }}
           ></div>
           <div style={{ float: "right", width: "450px" }}>
