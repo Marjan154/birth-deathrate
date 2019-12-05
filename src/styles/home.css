@@ -32,11 +32,11 @@
 #Population,
 #Income,
 #BirthDeath {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 #intro {
-  height: 100vh;
+  height: 80vh;
 }
 
 h1 {
@@ -74,4 +74,6 @@ h2 {
   max-width: 30vw;
   font-family: "Quicksand", sans-serif;
   font-size: 30px;
+  font-weight: 900;
+  color: #245db3;
 }
