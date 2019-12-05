@@ -162,6 +162,7 @@ class Visual extends Component {
             If you look at our visualizations, you might find interesting trends
             or unexpected information.
           </p>
+          <div><p className="As2017">As of 2017...</p></div>
           <div id="icons">
             <div>
               <img
@@ -178,7 +179,7 @@ class Visual extends Component {
                 style={{ padding: "20px" }}
                 className="p-icon"
               ></img>
-              <p>7510990456 people</p>
+              <p>7,510,990,456 people</p>
             </div>
             <div>
               <img
@@ -256,7 +257,7 @@ class Visual extends Component {
             </p>
           </div>
 
-          <div className="content">
+          {/* <div className="content">
             <p>
               As you can see there is a big spike in population in low-middle
               income countries. This could be due to the fact that these types
@@ -268,7 +269,7 @@ class Visual extends Component {
               causing woman to not have children or later on. Despite this
               however there is still an increase.
             </p>
-          </div>
+          </div> */}
         </div>
 
         <h1 style={{ width: "100vw" }}>CONCLUSION. WHY WE NEED THIS DATA?</h1>

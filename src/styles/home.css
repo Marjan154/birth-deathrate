@@ -70,6 +70,13 @@ h2 {
   flex-flow: row wrap;
 }
 
+.As2017{
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #245db3;
+}
+
 #icons p {
   max-width: 30vw;
   font-family: "Quicksand", sans-serif;
