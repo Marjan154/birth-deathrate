@@ -151,7 +151,7 @@ class Visual extends Component {
 
           <p
             className="content"
-            style={{ paddingBottom: "100px", textAlign: "center" }}
+            style={{ paddingBottom: "40px", textAlign: "center" }}
           >
             Birth and Death rates are crucial to assessing humanity&#39;s
             progress and advancement. According to The United Nations Food and
@@ -163,21 +163,31 @@ class Visual extends Component {
             or unexpected information.
           </p>
           <div id="icons">
-            <img
-              src={require("../images/birth.png")}
-              style={{ padding: "20px" }}
-              className="p-icon"
-            ></img>
-            <img
-              src={require("../images/population.png")}
-              style={{ padding: "20px" }}
-              className="p-icon"
-            ></img>
-            <img
-              src={require("../images/death.png")}
-              style={{ padding: "20px" }}
-              className="p-icon"
-            ></img>
+            <div>
+              <img
+                src={require("../images/birth.png")}
+                style={{ padding: "20px" }}
+                className="p-icon"
+              ></img>
+              <p>18.7 births per 1000 people</p>
+            </div>
+
+            <div>
+              <img
+                src={require("../images/population.png")}
+                style={{ padding: "20px" }}
+                className="p-icon"
+              ></img>
+              <p>7510990456 people</p>
+            </div>
+            <div>
+              <img
+                src={require("../images/death.png")}
+                style={{ padding: "20px" }}
+                className="p-icon"
+              ></img>
+              <p>7.54 deaths per 1000 people</p>
+            </div>
           </div>
         </div>
 

@@ -60,17 +60,18 @@ h2 {
 
 .p-icon {
   max-height: 100px;
+  max-width: 30vw;
 }
 
-p {
-  color: #5c5c5c;
-  line-height: 60px;
-  font-size: 14px;
-  /* background-color: #f5f6f7; */
-  padding: 10px;
-  /* border-style: solid;
-  border-color: #6494db; */
-  border-radius: 25px;
-  margin: 0;
-  text-align: center;
+#icons {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#icons p {
+  max-width: 30vw;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
 }
