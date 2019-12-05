@@ -1,0 +1,87 @@
+.viz-graphs {
+  padding-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 50px;
+}
+
+.viz-graphs div {
+  padding-bottom: 50px;
+}
+
+.viz-description {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  /*background-color: #eeeeee;*/
+}
+
+.content {
+  line-height: 200%;
+  font-size: 16px;
+  text-align: start;
+  text-indent: 5%;
+  margin: 0 auto;
+  width: 85%;
+  font-family: "Quicksand", sans-serif;
+}
+
+#Population,
+#Income,
+#BirthDeath {
+  padding-top: 80px;
+}
+
+#intro {
+  height: 80vh;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+  color: #6494db;
+  font-size: 50px;
+  
+}
+
+#title {
+  font-size: 90px;
+  color: #6494db;
+  margin: auto 0;
+}
+
+h2 {
+  color: #dbb164;
+  text-align: center;
+  font-size: 35px;
+  /*text-decoration-line: underline;*/
+}
+
+.p-icon {
+  max-height: 100px;
+  max-width: 30vw;
+}
+
+#icons {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.As2017{
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #245db3;
+}
+
+#icons p {
+  max-width: 30vw;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #245db3;
+}
