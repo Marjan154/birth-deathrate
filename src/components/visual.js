@@ -146,21 +146,38 @@ class Visual extends Component {
 
     return (
       <div>
-        <h1 id="title">Birth and Death Rates</h1>
+        <div id="intro">
+          <h1 id="title">Birth and Death Rates</h1>
 
-        <p
-          className="content"
-          style={{ paddingBottom: "100px", textAlign: "center" }}
-        >
-          Birth and Death rates are crucial to assessing humanity&#39;s progress
-          and advancement. According to The United Nations Food and Agriculture
-          Organization (FAO) estimates the world population will surpass 9.1
-          billion by 2050, at which point agricultural systems will not be able
-          to supply enough food to feed everyone. However, new research suggests
-          the world could run out of food even sooner. If you look at our
-          visualizations, you might find interesting trends or unexpected
-          information.
-        </p>
+          <p
+            className="content"
+            style={{ paddingBottom: "100px", textAlign: "center" }}
+          >
+            Birth and Death rates are crucial to assessing humanity&#39;s
+            progress and advancement. According to The United Nations Food and
+            Agriculture Organization (FAO) estimates the world population will
+            surpass 9.1 billion by 2050, at which point agricultural systems
+            will not be able to supply enough food to feed everyone. However,
+            new research suggests the world could run out of food even sooner.
+            If you look at our visualizations, you might find interesting trends
+            or unexpected information.
+          </p>
+          <div id="icons">
+            <img
+              src={require("../images/birth.png")}
+              style={{ padding: "20px" }}
+            ></img>
+            <img
+              src={require("../../images/population.png")}
+              style={{ padding: "20px" }}
+            ></img>
+            <img
+              src={require("../../images/death.png")}
+              style={{ padding: "20px" }}
+            ></img>
+          </div>
+        </div>
+
         <div className="viz-graphs">
           <h1 id="BirthDeath" style={{ width: "100vw" }}>
             DIFFERENCE IN BIRTH & DEATH RATES
