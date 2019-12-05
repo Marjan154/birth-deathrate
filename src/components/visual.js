@@ -166,14 +166,17 @@ class Visual extends Component {
             <img
               src={require("../images/birth.png")}
               style={{ padding: "20px" }}
+              className="p-icon"
             ></img>
             <img
-              src={require("../../images/population.png")}
+              src={require("../images/population.png")}
               style={{ padding: "20px" }}
+              className="p-icon"
             ></img>
             <img
-              src={require("../../images/death.png")}
+              src={require("../images/death.png")}
               style={{ padding: "20px" }}
+              className="p-icon"
             ></img>
           </div>
         </div>
@@ -261,14 +264,16 @@ class Visual extends Component {
         <h1 style={{ width: "100vw" }}>CONCLUSION. WHY WE NEED THIS DATA?</h1>
         <div className="content">
           <p>
-	This data is important because we need to track and distribute services/resources among humans. 
-  The growth of population directly affects economic, political and social growth as well as our environment. 
-  With overpopulation we can run out of resources as well as harm our environments. 
-  Things such as deforestation as well as hunting can cause species to become extinct. 
-  Being able to predict the population in the future will allow us to be better prepared for these issues. 
-  Other data also relies on using the population count in their calculations, 
-  so having an accurate count would make the other data accurate. 
-
+            This data is important because we need to track and distribute
+            services/resources among humans. The growth of population directly
+            affects economic, political and social growth as well as our
+            environment. With overpopulation we can run out of resources as well
+            as harm our environments. Things such as deforestation as well as
+            hunting can cause species to become extinct. Being able to predict
+            the population in the future will allow us to be better prepared for
+            these issues. Other data also relies on using the population count
+            in their calculations, so having an accurate count would make the
+            other data accurate.
           </p>
         </div>
       </div>

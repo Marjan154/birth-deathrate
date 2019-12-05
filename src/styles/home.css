@@ -58,6 +58,10 @@ h2 {
   /*text-decoration-line: underline;*/
 }
 
+.p-icon {
+  max-height: 100px;
+}
+
 p {
   color: #5c5c5c;
   line-height: 60px;
