@@ -108,7 +108,7 @@ class Visual extends Component {
     var AverageBirthRateOfCountriesOptions = {
       hideTabs: true,
       width: "47vw",
-      height: "700px",
+      height: "600px",
       onFirstInteractive: function() {
         // The viz is now ready and can be safely used.
       }
@@ -127,7 +127,7 @@ class Visual extends Component {
     var AverageDeathRateOfCountriesOptions = {
       hideTabs: true,
       width: "47vw",
-      height: "700px",
+      height: "600px",
       onFirstInteractive: function() {
         // The viz is now ready and can be safely used.
       }
@@ -212,8 +212,8 @@ class Visual extends Component {
               <p className="content">
                 <h2>Country & Year</h2>
                 You can view the death vs birth rate by country as well. The
-                bluer the map, the higher the difference between birth and death
-                rate
+                darker the color, the higher the difference between birth and death
+                rate.
               </p>
             </div>
           </div>
