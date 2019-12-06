@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 ### `npm install`
-This will install any module or package that you are missing. Please run this before running nom install
+This will install any module or package that you are missing. Please run this before running npm start
 
 ### `npm start`
 
