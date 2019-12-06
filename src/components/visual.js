@@ -151,8 +151,7 @@ class Visual extends Component {
 
           <p
             className="content"
-            style={{ paddingBottom: "40px", textAlign: "center" }}
-          >
+            style={{ paddingBottom: "40px", textAlign: "center" }} >
             Birth and Death rates are crucial to assessing humanity&#39;s
             progress and advancement. <a href="https://www.globalcitizen.org/en/content/world-running-out-of-food-by-2023/">
               The United Nations Food and
