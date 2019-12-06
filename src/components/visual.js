@@ -154,12 +154,11 @@ class Visual extends Component {
             style={{ paddingBottom: "40px", textAlign: "center" }}
           >
             Birth and Death rates are crucial to assessing humanity&#39;s
-            progress and advancement. According to The United Nations Food and
-            Agriculture Organization (FAO) estimates the world population will
-            surpass 9.1 billion by 2050, at which point agricultural systems
-            will not be able to supply enough food to feed everyone. However,
-            new research suggests the world could run out of food even sooner.
-            If you look at our visualizations, you might find interesting trends
+            progress and advancement. <a href="https://www.globalcitizen.org/en/content/world-running-out-of-food-by-2023/">
+              The United Nations Food and
+            Agriculture Organization (FAO) estimates that by 2050 the world population will
+            go over 9.1 billion and that there will not be enough food 
+            for everyone.</a> If you look at our visualizations, you might find interesting trends
             or unexpected information.
           </p>
           <div><p className="As2017">As of 2017...</p></div>
@@ -248,28 +247,15 @@ class Visual extends Component {
             <div id="AverageBirthRateOfCountries"></div>
             <div id="AverageDeathRateOfCountries"></div>
             <p className="content">
+              <a href="https://datatopics.worldbank.org/world-development-indicators/stories/the-classification-of-countries-by-income.html">
               The World Bank classifies low-income countries as countries with
               GNI per capita of less than $1,025. Lower middle-income countires
               has a GNI per capita between $1,026 and $3,995. Upper
               middle-income countries are between $3,996 and $12,375. And
               High-income countries are those with a GNI per capita of $12,376
-              or more.
+              or more.</a>
             </p>
           </div>
-
-          {/* <div className="content">
-            <p>
-              As you can see there is a big spike in population in low-middle
-              income countries. This could be due to the fact that these types
-              of countries requires …. (add citations) Other interesting facts
-              you can see is that high income countries have a slower increase
-              in population this could be because the birth rates are lower due
-              to better access to birth control, people viewing kids as a
-              financial drain. As well as having access to education and careers
-              causing woman to not have children or later on. Despite this
-              however there is still an increase.
-            </p>
-          </div> */}
         </div>
 
         <h1 style={{ width: "100vw" }}>CONCLUSION. WHY WE NEED THIS DATA?</h1>
