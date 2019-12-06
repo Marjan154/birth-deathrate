@@ -180,6 +180,11 @@ class Visual extends Component {
             or unexpected information.
           </p>
           <div><p className="As2017">As of 2017...</p></div>
+          {/* Icon source */}
+          
+          {/* <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" 
+          title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 
+          title="Flaticon">www.flaticon.com</a></div> */}
           <div id="icons">
             <div>
               <img
@@ -189,7 +194,10 @@ class Visual extends Component {
               ></img>
               <p>18.7 births per 1000 people</p>
             </div>
-
+            {/* Icon source */}
+            {/* <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" 
+            title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" 
+            title="Flaticon">www.flaticon.com</a></div> */}
             <div>
               <img
                 src={require("../images/population.png")}
@@ -198,6 +206,10 @@ class Visual extends Component {
               ></img>
               <p>7,510,990,456 people</p>
             </div>
+            {/* Icon source */}
+            {/* <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" 
+          title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 
+          title="Flaticon">www.flaticon.com</a></div> */}
             <div>
               <img
                 src={require("../images/death.png")}
