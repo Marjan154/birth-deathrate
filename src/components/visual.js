@@ -282,7 +282,7 @@ class Visual extends Component {
             <div id="RenewableWater" style={{ paddingRight: "30px" }}></div>
               <div style={{ float: "right", width: "300px" }}>
               <p className="content">
-                If a country’s population is growing and total renewable sources are not being 
+                If a country’s population keeps growing and total renewable sources are not being 
                 replenished fast enough to combat this growth, the per capita levels of water resources 
                 will decrease.
               </p>
