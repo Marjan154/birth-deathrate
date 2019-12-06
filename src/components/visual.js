@@ -137,6 +137,25 @@ class Visual extends Component {
       AverageDeathRateOfCountriesUrl,
       AverageDeathRateOfCountriesOptions
     );
+
+    const RenewableWaterUrl =
+      "https://public.tableau.com/shared/QJXY382D2?:display_count=y&:origin=viz_share_link";
+    const RenewableWater = document.getElementById(
+      "RenewableWater"
+    );
+    var RenewableWaterOptions = {
+      hideTabs: true,
+      width: "47vw",
+      height: "600px",
+      onFirstInteractive: function() {
+        // The viz is now ready and can be safely used.
+      }
+    };
+    let viz8 = new window.tableau.Viz(
+      RenewableWater,
+      RenewableWaterUrl,
+      RenewableWaterOptions
+    );
   }
 
   render() {
@@ -254,6 +273,20 @@ class Visual extends Component {
               High-income countries are those with a GNI per capita of $12,376
               or more.</a>
             </p>
+          </div>
+
+          <h1 id="Renewable" style={{ width: "100vw" }}>
+            RENEWABLE FRESHWATER RESOURCE
+          </h1>
+          <div className="viz-description">
+            <div id="RenewableWater" style={{ paddingRight: "30px" }}></div>
+              <div style={{ float: "right", width: "300px" }}>
+              <p className="content">
+                If a country’s population keeps growing and total renewable sources are not being 
+                replenished fast enough to combat this growth, the per capita levels of water resources 
+                will decrease.
+              </p>
+            </div>
           </div>
         </div>
 
