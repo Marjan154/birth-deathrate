@@ -284,7 +284,7 @@ class Visual extends Component {
               <p className="content">
                 If a country’s population is growing and total renewable sources are not being 
                 replenished fast enough to combat this growth, the per capita levels of water resources 
-                will fall, like we see in the graph.
+                will decrease.
               </p>
             </div>
           </div>
