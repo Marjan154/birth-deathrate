@@ -1,10 +1,8 @@
 .viz-graphs {
-  padding-bottom: 50px;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 50px;
 }
 
 .viz-graphs div {
@@ -43,7 +41,6 @@ h1 {
   font-family: "Quicksand", sans-serif;
   color: #6494db;
   font-size: 50px;
-  
 }
 
 #title {
@@ -71,7 +68,7 @@ h2 {
   flex-flow: row wrap;
 }
 
-.As2017{
+.As2017 {
   font-family: "Quicksand", sans-serif;
   font-size: 30px;
   font-weight: 900;
