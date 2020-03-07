@@ -1,3 +1,15 @@
+# Birth-Death-Visualizations
+
+Web Visualizations of birth and death rates across the world! Uses Tableau Api to create interactive interface so users can view a multitude of information.
+
+
+
+## Screenshots
+
+![Home](images/web.png)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
