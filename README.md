@@ -5,7 +5,7 @@ Web Visualizations of birth and death rates across the world! Uses Tableau Api t
 
 
 ## Screenshots
-
+Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.co](https://www.flaticon.com/)
 ![Home](images/web.png)
 
 
